@@ -12,4 +12,6 @@ Our module ``Unset HTML head link`` can do it. Fast and simply!
 
 ## Install
 
-Download [ZIP with module](https://github.com/enjoyiacm/unset_html_head_link/archive/master.zip), unpack and upload to ``./modules/`` folder in your server. Enable this module at ``/admin/modules`` (look in ``SEO`` pack). _Don't forget to flush cache!_
+* Download [ZIP with module](https://github.com/enjoyiacm/unset_html_head_link/archive/master.zip), unpack and upload to ``./modules/`` folder in your server.
+* Enable this module at ``/admin/modules`` (look in ``SEO`` pack).
+* _Don't forget to flush cache!_
