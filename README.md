@@ -8,7 +8,7 @@ If you want SEO boosting with Drupal 8.x site, we recomended to delete this HTML
 <link rel="version-history" href="/node/1/revisions" />
 <link rel="revision" href="/page-1-name" />
 ```
-This module can do it. Fast and simply!
+Our module ``Unset HTML head link`` can do it. Fast and simply!
 
 ## Install
 
