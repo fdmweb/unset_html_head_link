@@ -9,8 +9,7 @@ function unset_html_head_link_entity_view_alter(array &$build, Drupal\Core\Entit
     // Cheking html_head_link on attached tags in head.
     if (!isset($build['#attached']['html_head_link'])) return;
     // Array to unset.
-    // Also, you may unset any head links you want (like rel="canonical" or rel="shortlink").
-    $unset_html_head_link = [      
+    $unset_html_head_link = [
       'delete-form',
       'edit-form',
       'version-history',
@@ -20,5 +19,33 @@ function unset_html_head_link_entity_view_alter(array &$build, Drupal\Core\Entit
     foreach ($build['#attached']['html_head_link'] as $key => $value) {
       if (isset($value[0]['rel']) && in_array($value[0]['rel'], $unset_html_head_link)) unset($build['#attached']['html_head_link'][$key]);
     }
+  }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function unset_html_head_link_page_attachments_alter(array &$attachments) {
+  // Array to unset.
+  $unset_html_head_link = [
+    'delete-form',
+    'edit-form',
+    'version-history',
+    'revision'
+  ];
+  // Unset loop.
+  foreach ($attachments['#attached']['html_head_link'] as $key => $value) {
+    if (isset($value[0]['rel']) && in_array($value[0]['rel'], $unset_html_head_link)) unset($attachments['#attached']['html_head_link'][$key]);
+  }
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function unset_html_head_link_module_implements_alter(&$implementations, $hook) {
+  if ($hook === 'page_attachments_alter') {
+    $group = $implementations['unset_html_head_link'];
+    unset($implementations['unset_html_head_link']);
+    $implementations['unset_html_head_link'] = $group;
   }
 }
