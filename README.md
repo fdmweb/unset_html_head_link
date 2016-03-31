@@ -10,6 +10,11 @@ If you want SEO boosting with Drupal 8.x site, we recomended to delete this HTML
 ```
 Our module ``Unset HTML head link`` can do it. Fast and simply!
 
+Support:
+
+* Node
+* Taxonomy term
+
 ## Install
 
 * Download [ZIP with module](https://github.com/enjoyiacm/unset_html_head_link/archive/master.zip), unpack and upload to ``./modules/`` folder in your server.
