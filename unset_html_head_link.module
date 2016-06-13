@@ -14,29 +14,18 @@ function unset_html_head_link_entity_view_alter(array &$build, EntityInterface $
   if ($build['#view_mode'] !== 'full' && $entity Instanceof NodeInterface) {
     return;
   }
-  // Cheking html_head_link on attached tags in head.
-  if (!isset($build['#attached']['html_head_link'])) {
-    return;
-  }
-  // Array to unset.
-  $unset_html_head_link = [
-    'delete-form',
-    'edit-form',
-    'version-history',
-    'revision'
-  ];
-  // Unset loop.
-  foreach ($build['#attached']['html_head_link'] as $key => $value) {
-    if (isset($value[0]['rel']) && in_array($value[0]['rel'], $unset_html_head_link)) {
-      unset($build['#attached']['html_head_link'][$key]);
-    }
-  }
+  _remove_header_links($build);
 }
 
 /**
  * Implements hook_page_attachments_alter().
+ * @param array $attachments
  */
 function unset_html_head_link_page_attachments_alter(array &$attachments) {
+  _remove_header_links($attachments);
+}
+
+function _remove_header_links(array &$attachments) {
   // Cheking html_head_link on attached tags in head.
   if (!isset($attachments['#attached']['html_head_link'])) {
     return;
