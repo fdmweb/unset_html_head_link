@@ -37,6 +37,10 @@ function unset_html_head_link_entity_view_alter(array &$build, EntityInterface $
  * Implements hook_page_attachments_alter().
  */
 function unset_html_head_link_page_attachments_alter(array &$attachments) {
+  // Cheking html_head_link on attached tags in head.
+  if (!isset($attachments['#attached']['html_head_link'])) {
+    return;
+  }
   // Array to unset.
   $unset_html_head_link = [
     'delete-form',
