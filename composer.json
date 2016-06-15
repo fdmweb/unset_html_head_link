@@ -1,0 +1,14 @@
+{
+  "name": "WondrousLLC/unset_html_head_link",
+  "type": "drupal-module",
+  "description": "Remove Header Links for SEO reasons",
+  "keywords": ["Drupal"],
+  "license": "MIT",
+  "homepage": "https://github.com/WondrousLLC/unset_html_head_link",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/WondrousLLC/unset_html_head_link",
+    "source": "https://github.com/WondrousLLC/unset_html_head_link"
+  },
+  "require": { }
+}
