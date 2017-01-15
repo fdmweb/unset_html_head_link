@@ -1,5 +1,5 @@
 {
-  "name": "koddr/drupal8_unset_html_head_link",
+  "name": "unset_html_head_link",
   "type": "drupal-module",
   "description": "Remove Header Links for SEO reasons",
   "keywords": ["Drupal", "SEO"],
