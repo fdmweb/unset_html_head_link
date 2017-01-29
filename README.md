@@ -23,7 +23,7 @@ Support:
 
 ## Developers
 
-Development and maintenance of `Unset HTML head link` project engaged by Vikky Shostak ([Koddr](https://koddr.me)). If you want to write a «thank you» or ask us about something, [use this e-mail](mailto:koddr.me@yandex.ru).
+Development and maintenance of `Unset HTML head link` project engaged by Vikky Shostak ([Koddr](https://koddr.me)). If you want to write a «thank you» or ask us about something, [use this e-mail](mailto:koddr.me@gmail.com).
 
 ## Your help
 
