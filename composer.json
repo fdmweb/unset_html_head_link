@@ -1,0 +1,14 @@
+{
+  "name": "koddr/unset_html_head_link",
+  "type": "drupal-module",
+  "description": "Remove Header Links for SEO reasons",
+  "keywords": ["Drupal", "SEO"],
+  "license": "MIT",
+  "homepage": "https://github.com/koddr/drupal_8_unset_html_head_link",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/koddr/drupal_8_unset_html_head_link/issues",
+    "source": "https://github.com/koddr/drupal_8_unset_html_head_link"
+  },
+  "require": { }
+}
